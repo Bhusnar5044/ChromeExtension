@@ -5,14 +5,14 @@ export const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items:center;
-  padding: 0.3rem;
+  padding: 3px;
   height:50px;
 `
 
 export const HeaderText = styled.div`
   color: #435465;
   align-self: center;
-  font-size:1.2rem;
+  font-size:18px;
   font-weight:bold;
   padding:0 10px;
 `
@@ -28,11 +28,11 @@ export const Menu = styled.div`
     z-index: 10000000;
     a {
         color: rgb(34,34,34);
-        padding: 4px 16px;
+        padding: 5px 16px;
         text-decoration: none;
         display: block;
         &:hover{
-            background-color:blue;
+            background-color:gray;
         }
     }
     hr{
@@ -42,9 +42,12 @@ export const Menu = styled.div`
 `
 
 export const MenuButton = styled.button`
+    margin: 0;
     background:none;
     border:none;
     height:auto;
+    padding: 0 10px;
+    cursor: pointer;
     div {
         width: 20px;
         height: 3px;

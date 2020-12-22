@@ -6,6 +6,7 @@ import { AppState } from '../../store/store'
 import { ModalWrapper } from './styled'
 import { useSelector } from 'react-redux'
 import TagInput from '../TagInput'
+import LoginIndicator from '../LoginIndicator'
 
 
 export const PopUpWindow:React.FC =() => {
@@ -16,6 +17,7 @@ export const PopUpWindow:React.FC =() => {
 
   const posts = <div style={{color:'black',fontSize:'16px'}}>{tabReducer.tabInfo!==undefined && tabReducer.tabInfo.title}</div>
   
+  const signIn = <LoginIndicator/>
   useEffect(()=>{
 
   },[])
@@ -24,6 +26,7 @@ export const PopUpWindow:React.FC =() => {
         <ModalWrapper id="extension_Pocket_App">
             <Modal modalContent={content} />
             <Modal modalContent={posts} />
+            <Modal modalContent={signIn} />
         </ModalWrapper>   
     )
 }

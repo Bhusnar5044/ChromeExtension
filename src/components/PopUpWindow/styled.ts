@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const ModalWrapper = styled.div`
+  font-family: 'proxima-nova', -apple-system, BlinkMacSystemFont, 'Segoe UI',Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica,sans-serif !important;
   position:fixed;
+  font-size: 16px;
   top:0;
   z-index:100000;
   right:10px;

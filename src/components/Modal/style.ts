@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledModal = styled.div`
-    width: 300px;
+    width: 300px !important;
     z-index: 100;
     background-color: rgb(249,249,249);
     /* position: relative; */
@@ -16,11 +16,11 @@ export const Content = styled.div`
   height: auto;
 `
 
-export const Input = styled.input`
+/* export const Input = styled.input`
   width: 230px;
   height: 20px;
   padding: 10px;
   margin: 10px;
   font-size:20px;
   border-radius: 10px;
-`
+` */
